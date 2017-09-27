@@ -1,0 +1,19 @@
+{
+  "name": "Twitter and TweetDeck in #280Characters",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Enables #280Characters on Twitter and TweetDeck for everyone.",
+  "homepage_url": "https://www.strangecode.com/",
+  "permissions": [
+    "https://tweetdeck.twitter.com/*",
+    "https://twitter.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://tweetdeck.twitter.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": ["tweetdeck.js", "twitter.js"]
+}

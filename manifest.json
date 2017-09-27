@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "manifest_version": 2,
   "description": "Enables #280Characters on Twitter and TweetDeck for everyone.",
-  "homepage_url": "https://www.strangecode.com/",
+  "homepage_url": "https://github.com/quinncomendant/280Characters",
   "permissions": [
     "https://tweetdeck.twitter.com/*",
     "https://twitter.com/*"

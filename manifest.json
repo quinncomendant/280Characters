@@ -1,9 +1,9 @@
 {
-  "name": "Twitter and TweetDeck in #280Characters",
+  "name": "TweetDeck in #280Characters",
   "short_name": "#280Characters",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "manifest_version": 2,
-  "description": "Enables 280-character tweets on TweetDeck for everyone. (Update: no longer works at twitter.com)",
+  "description": "Enables 280-character tweets on TweetDeck for everyone.",
   "homepage_url": "https://github.com/quinncomendant/280Characters",
   "icons": {
     "16": "icons/icon16.png",
@@ -12,12 +12,11 @@
     "128": "icons/icon128.png"
   },
   "permissions": [
-    "https://tweetdeck.twitter.com/*",
-    "https://twitter.com/*"
+    "https://tweetdeck.twitter.com/*"
   ],
   "content_scripts": [
     {
-      "matches": ["https://tweetdeck.twitter.com/*", "https://twitter.com/*"],
+      "matches": ["https://tweetdeck.twitter.com/*"],
       "js": ["content.js"],
       "run_at": "document_start"
     }

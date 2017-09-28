@@ -1,7 +1,7 @@
 {
   "name": "Twitter and TweetDeck in #280Characters",
   "short_name": "#280Characters",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "manifest_version": 2,
   "description": "Enables 280-character tweets on TweetDeck for everyone. (Update: no longer works at twitter.com)",
   "homepage_url": "https://github.com/quinncomendant/280Characters",

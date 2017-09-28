@@ -1,3 +1,4 @@
+// Loop until TD and twttr.txt are available, then override the necessary methods.
 var checkExists = setInterval(function() {
     try {
         if (typeof TD.services.TwitterClient.prototype.makeTwitterCall !== 'undefined' && typeof twttr.txt !== 'undefined') {
@@ -33,3 +34,18 @@ var checkExists = setInterval(function() {
         }
     } catch (e) {}
 }, 500);
+
+// Hide js-character-count unless len > 140, because getTweetLength returns 1 otherwise.
+document.addEventListener('input', function (e) {
+    if (e.target.classList.contains('js-compose-text')) {
+        if (e.target.value.length < 140) {
+            document.querySelectorAll('.js-character-count').forEach(elm => {
+                elm.style.opacity = '0';
+            });
+        } else {
+            document.querySelectorAll('.js-character-count').forEach(elm => {
+                elm.style.opacity = '1';
+            });
+        }
+    }
+});

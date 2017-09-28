@@ -11,7 +11,7 @@ var checkExists = setInterval(function() {
         });
         clearInterval(checkExists);
     }
-}, 50);
+}, 100);
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.RichEditor-bottomItems > .EmojiPicker').forEach(elm => {
         elm.parentElement.classList.add('RichEditor-topItems');

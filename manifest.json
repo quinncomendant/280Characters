@@ -3,7 +3,7 @@
   "short_name": "#280Characters",
   "version": "1.0.6",
   "manifest_version": 2,
-  "description": "This extension does absolutely nothing. (It once enabled 280-character tweets on Twitter and TweetDeck, but Twitter has now blocked that.)",
+  "description": "This extension does nothing. (It once enabled 280-character tweets on Twitter and TweetDeck, but Twitter has now blocked that.)",
   "homepage_url": "https://github.com/quinncomendant/280Characters",
   "icons": {
     "16": "icons/icon16.png",
